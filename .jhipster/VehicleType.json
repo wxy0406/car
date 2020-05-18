@@ -1,0 +1,37 @@
+{
+    "name": "VehicleType",
+    "fields": [
+        {
+            "fieldName": "code",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "vehicleType",
+            "otherEntityRelationshipName": "vehicleType",
+            "relationshipName": "vehicleType",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190706105748",
+    "entityTableName": "vehicle_type",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

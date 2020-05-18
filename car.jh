@@ -1,0 +1,39 @@
+entity VehicleInformation {
+	code String required,
+    name String required,
+    number String required,
+    purchaseDate String required,
+    price Integer min(0) required,
+    leaseState LeaseState required
+}
+
+entity VehicleType {
+	code String required,
+    name String required
+}
+
+entity RentalInformation {
+	code String required,
+	preparedPeople String required,
+	rentDate String required,
+	rentalUnits String required,
+    builder String required,
+    rental Integer min(0) required,
+    leaseTime Integer min(0) required,
+    remarks String
+}
+
+enum LeaseState {
+    YES, NO
+}
+
+relationship OneToOne {
+	RentalInformation{vehicleInformation} to VehicleInformation
+}
+
+relationship ManyToOne {
+	VehicleInformation{vehicleType} to VehicleType,
+    VehicleType{vehicleType} to VehicleType
+}
+
+service all with serviceImpl
