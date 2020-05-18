@@ -1,0 +1,37 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.jiuqi.car"
+    },
+    "jhipsterVersion": "6.1.2",
+    "applicationType": "monolith",
+    "baseName": "car",
+    "packageName": "com.jiuqi.car",
+    "packageFolder": "com/jiuqi/car",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "OTNjOTA5YzViMWMwZDRjMDU2YTk2YzY1MjJkYzQ0ZDAxODEwZTZlMjVmMDU3N2QzYjEyYjdmYjI2YWUyMmJhMDI4ODMwZjJhNDI3M2Q0ZGJkMzUwMGVmZDE0NTAyN2YyZmI2ZGJlMmNlOTA4Y2ZiNzI3YjIxZGU3NDY2NjY3NjQ=",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "react",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false
+  }
+}
